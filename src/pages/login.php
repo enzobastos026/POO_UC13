@@ -1,6 +1,6 @@
 <?php
  
-include 'src/classes/usuario.php';
+require_once 'db/db.php';
  
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['usuario'] ?? '';
